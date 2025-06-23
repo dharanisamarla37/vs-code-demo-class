@@ -1,0 +1,41 @@
+class dog():
+    def speak(self):
+        print("dog says bow")
+class cat():
+    def speak(self):
+        print("cat says meom")
+class cow():
+    def speak(self):
+        print("cow says umm")
+def animal_sound(animal):
+    animal.speak()
+Cat=cat()
+Dog=dog()
+Cow=cow()
+animal_sound(Cat)
+animal_sound(Dog)
+animal_sound(Cow)
+
+#bank accountWe’ll create different types 
+# of bank accounts 
+# (SavingsAccount, CurrentAccount, FixedDepositAccount), and each one will have its own get_interest_rate() method.
+
+
+class savings_account():
+    def get_intrest_rate(self):
+        print("savings account")
+class current_account():
+    def get_intrest_rate(self):
+        print("current_account")
+class fixed_deposit():
+    def get_intrest_rate(self):
+        print("fixed deposit")
+        
+def show_intrest(account):
+    account.get_intrest_rate()
+sa=savings_account()
+ca=current_account()
+fd=fixed_deposit()
+show_intrest(sa)
+show_intrest(ca)
+show_intrest(fd)
